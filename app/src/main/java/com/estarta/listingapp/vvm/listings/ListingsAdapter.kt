@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.estarta.listingapp.RequestStatus
 import com.estarta.listingapp.data.models.ListingResp
-import com.estarta.listingapp.vvm.listings.viewmodel.ListingsViewHolder
 
 class ListingsAdapter(
     val context: FragmentActivity?,
@@ -24,14 +23,14 @@ class ListingsAdapter(
                 oldItem: ListingResp.ListingItem,
                 newItem: ListingResp.ListingItem
             ): Boolean {
-                return oldItem == newItem
+                return true
             }
 
             override fun areItemsTheSame(
                 oldItem: ListingResp.ListingItem,
                 newItem: ListingResp.ListingItem
             ): Boolean {
-                return oldItem.uid == newItem.uid
+                return true
             }
         }
     }

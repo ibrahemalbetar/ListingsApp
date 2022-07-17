@@ -1,9 +1,7 @@
 package com.estarta.listingapp.vvm.listings
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.AdapterView
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView

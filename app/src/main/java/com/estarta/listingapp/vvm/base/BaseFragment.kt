@@ -17,8 +17,6 @@ import kotlinx.coroutines.MainScope
 import com.estarta.listingapp.R
 import com.estarta.listingapp.BR
 
-
-
 abstract class BaseFragment<B : ViewDataBinding, VM : ViewModel>(@LayoutRes contentLayoutId: Int) :
     Fragment(contentLayoutId), CoroutineScope by MainScope() {
     var successDrawable: Drawable? = null
