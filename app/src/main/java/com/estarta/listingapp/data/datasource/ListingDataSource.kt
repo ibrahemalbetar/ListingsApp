@@ -93,6 +93,7 @@ class ListingDataSource(
 
                     data.results?.let {
 
+                        callback.onResult(it, null, "0")
                         updateState(true, RequestStatus.LOADED)
                     }
 
